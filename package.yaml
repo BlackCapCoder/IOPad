@@ -1,6 +1,3 @@
-# This YAML file describes your package. Stack will automatically generate a
-# Cabal file when you run `stack build`. See the hpack website for help with
-# this file: <https://github.com/sol/hpack>.
 benchmarks:
   iopad-benchmarks:
     dependencies:
@@ -14,7 +11,7 @@ benchmarks:
     main: Main.hs
     source-dirs: benchmark
 category: Other
-description: iopad is a new Haskeleton package.
+description: Touchpad gestures as an alternative to the keyboard
 executables:
   iopad:
     dependencies:
@@ -27,8 +24,6 @@ executables:
     main: Main.hs
     source-dirs: executable
 extra-source-files:
-- CHANGELOG.md
-- LICENSE.md
 - package.yaml
 - README.md
 - stack.yaml
@@ -43,21 +38,7 @@ library:
   - containers
   - data-default
   source-dirs: library
-license: MIT
-maintainer: Author name here
+maintainer: BlackCap
 name: iopad
-synopsis: A new Haskeleton package.
-tests:
-  iopad-test-suite:
-    dependencies:
-    - base
-    - iopad
-    - tasty
-    - tasty-hspec
-    ghc-options:
-    - -rtsopts
-    - -threaded
-    - -with-rtsopts=-N
-    main: Main.hs
-    source-dirs: test-suite
+synopsis: Touchpad gestures as an alternative to the keyboard
 version: '0.0.0'
