@@ -1,3 +1,10 @@
+{- Implements this: https://www.kernel.org/doc/Documentation/input/multi-touch-protocol.txt
+
+   I have only tested this on one machine, but presumably it is somewhat standard.
+   It may or may not work on mac, but defenitly works on Linux.
+   Windows is shooting yourself in the leg and just plain lazy; go away!
+-}
+
 {-# LANGUAGE LambdaCase, GADTSyntax #-}
 module TrackFingers
   ( Finger (..)
